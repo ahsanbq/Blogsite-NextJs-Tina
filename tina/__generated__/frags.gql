@@ -1,0 +1,27 @@
+fragment PostParts on Post {
+  __typename
+  title
+  description
+  date
+  author
+  coverImage
+  tags
+  body
+}
+
+fragment PageParts on Page {
+  __typename
+  title
+  description
+  heroImage
+  cards {
+    __typename
+    title
+    subtitle
+    image
+    content
+    buttonText
+    buttonLink
+  }
+  body
+}

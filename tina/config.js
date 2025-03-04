@@ -1,15 +1,14 @@
 import { defineConfig } from 'tinacms';
 
 const branch =
-  process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
   'main';
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || '976fa33b-da74-40b1-ae4a-a4eb6d2f2cc4', // Get this from tina.io
-  token: process.env.TINA_TOKEN || '56c307a56545abd9ff54eff08ee0b94aff68440c', // Get this from tina.io
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || '9b5055f5-7990-480a-9119-5b645d11da3c',
+  token: process.env.TINA_TOKEN || '5ad3fd44ab2689e4dc9efb2009846a0407ddeba6',
 
   build: {
     outputFolder: 'admin',
